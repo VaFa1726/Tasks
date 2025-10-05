@@ -1,0 +1,188 @@
+/* main.css */
+
+/* ============================= */
+/* General Settings */
+/* ============================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s ease;
+}
+
+body:hover {
+    background: linear-gradient(135deg, #e0f7fa, #d1c4e9);
+}
+
+/* ============================= */
+/* Navbar */
+/* ============================= */
+.navbar {
+    border-bottom: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #0d6efd !important;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #6610f2 !important;
+    transform: scale(1.05);
+}
+
+.navbar .btn-primary {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 0.6rem 1.8rem;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.navbar .btn-primary:hover {
+    background: linear-gradient(135deg, #6610f2, #0d6efd);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ============================= */
+/* Container & Cards */
+/* ============================= */
+.container {
+    max-width: 900px;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg, #ffffff, #f7f9fc);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* ============================= */
+/* Buttons */
+.btn {
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 0.6rem 1.8rem;
+    transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #6610f2, #0d6efd);
+    transform: scale(1.1) rotate(-1deg);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+/* ============================= */
+/* Alerts */
+.alert {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-weight: 600;
+    transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.alert-info {
+    background: linear-gradient(135deg, #d0ebff, #a5d8ff);
+    color: #055160;
+    border: none;
+    border-left: 6px solid #0d6efd;
+}
+
+.alert-info:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* ============================= */
+/* Forms */
+input, textarea, select {
+    border-radius: 12px;
+    border: 1px solid #ced4da;
+    padding: 0.6rem 1rem;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #6610f2;
+    box-shadow: 0 0 12px rgba(102, 16, 242, 0.4);
+    outline: none;
+    transform: scale(1.02);
+}
+
+/* ============================= */
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+    color: #212529;
+}
+
+p {
+    line-height: 1.7;
+}
+
+/* ============================= */
+/* Task Items */
+.task-item {
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    border-left: 6px solid #6610f2;
+    background: linear-gradient(135deg, #ffffff, #f0f4f8);
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+    transition: all 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.task-item::before {
+    content: "📝";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.task-item:hover {
+    transform: translateX(8px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    border-left-color: #0d6efd;
+}
+
+/* ============================= */
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: #888;
+    font-size: 0.9rem;
+    background: linear-gradient(135deg, #f0f4f8, #e0e7ff);
+    border-top: 1px solid #d0d7e0;
+    transition: all 0.3s ease;
+}
+
+footer:hover {
+    background: linear-gradient(135deg, #e0e7ff, #f0f4f8);
+}
