@@ -1,0 +1,32 @@
+# Dependencies
+/node_modules
+/vendor
+/venv
+
+# Secrets - NEVER commit this file directly
+.env
+config.local.json
+
+# Databases
+*.sqlite3
+*.db
+
+# OS & IDE specific
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Build artifacts
+/dist
+/build
+*.pyc
+
+# User uploads
+/uploads/
+/media/
